@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Fill Up</title>
+		<style> 
+input[type=text] {
+    width: 18%;
+    padding: 6px 10px;
+    box-sizing: border-box;
+}
+</style>
+	</head>
+
+<body>
+
+<form>
+
+<br><br>
+
+	<font style="Arial Black" font size="4">
+	First Name: <br>
+ &nbsp; &nbsp; &nbsp;	<input type="text" id="fname" placeholder="First Name">
+<br><br>
+Last Name: <br>
+ &nbsp; &nbsp; &nbsp;	<input type="text" id="lname" placeholder="Last Name">
+<br><br>
+Address: <br>
+ &nbsp; &nbsp; &nbsp;	<input type="text" id="address" placeholder="Address">
+<br><br>
+Contact No.:<br>
+ &nbsp; &nbsp; &nbsp;	<input type="text" id="cnumber" placeholder="Contact Number">
+ 	</font>
+<br><br>
+&nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; 
+
+	<BUTTON onclick="save();" style="font-size: 15px; background-color: #ffffff; color: #000000; border-radius: 4px;">Save</BUTTON>
+
+	<script type="text/javascript">
+	
+function save(){
+	var  SAVE=document.getElementById('fname').value;
+	localStorage.setItem("fname",SAVE);
+
+	var save1=document.getElementById('lname').value;
+	localStorage.setItem("lname",save1)
+
+	var save2=document.getElementById('address').value;
+	localStorage.setItem("address",save2);
+
+	var save3=document.getElementById('cnumber').value;
+	localStorage.setItem("cnumber",save3);	
+	}
+</script>
+</form>
+
+</body>
+</html>
